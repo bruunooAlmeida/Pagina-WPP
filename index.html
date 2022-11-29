@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src=""></script>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src=main.js> </script>
+    <title>Envio de Mensagem Whastapp</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>  
+    
+    <nav >
+        <div class="nav-wrapper white" >
+          <img src="alfalogo.png" class="brand-logo center" width="205px"></a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down purple darken-4">
+       
+            <li><a href="https://alfaonline.com.br/unidade/alfa-tesla-maringa/" target="_blank">Alfa Maringa</a></li>
+          </ul>
+          <ul id="nav-mobile" class="right hide-on-med-and-down purple darken-4">
+            <li><a href="https://portaleleva.com.br/portal/">Portal do Aluno</a></li>
+            
+      </nav>
+    
+    
+    <div class="row">                    
+        <div class="col s6 m3"></div>                
+        <div class="col s5 m6">
+            <h1>Envio de Mensagens</h1>            
+            <div class="row">                  
+                <div class="input-field col s2 m3">
+                  <input id="ddd" type="text" data-length="10">            
+                  <label for="input_text">DDD</label>
+              </div>         
+              <div class="input-field col s6">
+                <input id="numero" type="text" onkeydown="mascaraTelefone()" data-length="10" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">            
+                <label for="input_text">Celular</label>
+              </div>                     
+            </div>            
+            <div class="row">
+                <form class="col s10">
+                  <div class="row">
+                    <div class="input-field col s10">
+                      <textarea id="texto" class="materialize-textarea"></textarea>
+                      <label for="texto">Mensagem</label>
+                    </div>
+                  </div>
+                </form>
+            </div>
+            <div class="col s4"></div>
+            <div class="col s6">
+                <a class="waves-effect waves-light btn " onclick="enviarMsg()"><i class="material-icons left">send</i>Enviar Mensagem</a>            
+            </div>
+        </div>
+    </div>
+    <div class="row"></div>
+    <div class="row"></div>
+    <div class="row"></div>
+    <div class="row"></div>
+    <div class="row"></div>
+    <div class="row"></div>
+    <div class="row"></div>
+    <div class="row"></div>
+    <div class="row"></div>
+    <div class="row"></div>
+
+    
+    <footer class="page-footer  purple darken-4">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+                              
+              <img class="materialboxed" width="210px" src="https://alfaonline.com.br/wp-content/uploads/2019/10/logo-footer-255x88.png">
+
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links Rapidos</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="https://alfaonline.com.br/quem-somos/nossos-valores/">Quem somos</a></li>
+                <li><a class="grey-text text-lighten-3" href="https://alfaonline.com.br/seja-um-alfa/">Seja um Alfa </a></li>
+                <li><a class="grey-text text-lighten-3" href="https://alfaonline.com.br/quem-somos/pilares-pedagogicos/">Pilhares Pedagogicos</a></li>
+                <li><a class="grey-text text-lighten-3" href="https://alfaonline.com.br/sucesso-academico/resultados/">Resultados</a></li>
+                <li><a class="grey-text text-lighten-3" href="https://alfaonline.com.br/matriculas2023/">Matriculas</a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-copyright">
+          <div class="container"> © 2022 Bruno Henrique de Almeida
+          <a class="grey-text text-lighten-4 right" href="https://alfaonline.com.br/">Para mais informações</a>
+          </div>
+        </div>
+      </footer>
+       
+</body>
+</html>
